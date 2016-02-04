@@ -677,21 +677,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hbx-ZN-E0U">
-                        <rect key="frame" x="18" y="312" width="74" height="32"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IQk-qp-Hyf">
+                        <rect key="frame" x="355" y="142" width="111" height="32"/>
                         <animations/>
-                        <buttonCell key="cell" type="push" title="Show" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VaT-wb-pkA">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="showAlertCategory:" target="Voe-Tx-rLC" id="fts-zf-tfc"/>
-                        </connections>
-                    </button>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQk-qp-Hyf">
-                        <rect key="frame" x="368" y="140" width="81" height="32"/>
-                        <animations/>
-                        <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XMI-hv-Ueg">
+                        <buttonCell key="cell" type="push" title="Use Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XMI-hv-Ueg">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -708,13 +697,26 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hbx-ZN-E0U">
+                        <rect key="frame" x="14" y="312" width="123" height="32"/>
+                        <animations/>
+                        <buttonCell key="cell" type="push" title="Use Category" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VaT-wb-pkA">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showAlertCategory:" target="Voe-Tx-rLC" id="fts-zf-tfc"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="hbx-ZN-E0U" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="24" id="9O0-oC-xjH"/>
+                    <constraint firstAttribute="bottom" secondItem="IQk-qp-Hyf" secondAttribute="bottom" constant="149" id="2rU-D6-aIy"/>
+                    <constraint firstItem="hbx-ZN-E0U" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="9O0-oC-xjH"/>
                     <constraint firstAttribute="trailing" secondItem="qHK-VN-UTB" secondAttribute="trailing" constant="14" id="EyC-Dd-Nd5"/>
                     <constraint firstItem="hbx-ZN-E0U" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" symbolic="YES" id="Xsr-5H-JdV"/>
                     <constraint firstAttribute="bottom" secondItem="qHK-VN-UTB" secondAttribute="bottom" constant="20" symbolic="YES" id="ZWg-0l-utF"/>
                     <constraint firstItem="qHK-VN-UTB" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="26" id="cdG-hE-Sg2"/>
+                    <constraint firstAttribute="trailing" secondItem="IQk-qp-Hyf" secondAttribute="trailing" constant="20" symbolic="YES" id="nwe-IG-QY2"/>
                 </constraints>
                 <animations/>
             </view>

@@ -64,8 +64,8 @@
                 strPressed = @"Cancel";
                 break;
             case NSAlertThirdButtonReturn:
-                strPressed = @"LMAlertPopover";
-                [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/lemonmojo/LMAlertPopover"]];
+                strPressed = @"Github";
+                [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://github.com/BokkkRottt/BRAlertPopoverController"]];
                 break;
             default:
                 break;
@@ -79,10 +79,10 @@
 {
     NSAlert* alert = [[NSAlert alloc] init];
     alert.messageText = @"BRAlertPopoverController";
-    alert.informativeText = @"BRAlertPopoverController provides a simple API for showing an NSAlert as Popover.\n\nIt is based on LMAlertPopover.";
+    alert.informativeText = @"BRAlertPopoverController provides a simple API for showing an NSAlert as Popover.\n\nIt is modal, easy to create.\n\n    [anAlert showRelativeToRect: view: preferredEdge: completionHandler:]";
     [alert addButtonWithTitle:@"OK"];
     [alert addButtonWithTitle:@"Cancel"];
-    [alert addButtonWithTitle:@"LMAlertPopover"];
+    [alert addButtonWithTitle:@"Github"];
     alert.alertStyle = NSCriticalAlertStyle;
     alert.showsSuppressionButton = YES;
     return alert;
